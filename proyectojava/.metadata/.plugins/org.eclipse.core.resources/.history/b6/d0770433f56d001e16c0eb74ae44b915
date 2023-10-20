@@ -1,0 +1,6 @@
+package proyecto;
+
+public class cajoneras extends muebles{
+	private String color;
+	private int altura, ancho;
+}

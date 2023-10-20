@@ -1,0 +1,62 @@
+package proyecto;
+
+/**
+ * La clase Cajoneras representa un tipo de mueble que hereda las
+ * características de la clase Muebles e incluye atributos adicionales como la
+ * cantidad de cajones y la cantidad de ladrillos que se pueden guardar en
+ * ellos.
+ *
+ * @version 1.0
+ * @since 2023-10-18
+ */
+public class cajoneras extends muebles {
+	private int cajones, ladrillos;
+
+	/**
+     * Constructor de la clase Cajoneras que permite crear una cajonera con atributos iniciales.
+     *
+     * @param color   El color de la cajonera.
+     * @param altura  La altura de la cajonera en centímetros.
+     * @param ancho   El ancho de la cajonera en centímetros.
+     * @param peso    El peso de la cajonera en kilogramos.
+     * @param cajones La cantidad de cajones en la cajonera.
+     */
+    public cajoneras(String color, int altura, int ancho, int peso, int cajones) {
+        super(color, altura, ancho, peso);
+        this.cajones = cajones;
+        this.ladrillos = 0; // Inicialmente, no hay ladrillos en la cajonera
+    }
+
+    /**
+     * Obtiene la cantidad de cajones en la cajonera.
+     *
+     * @return La cantidad de cajones como un entero.
+     */
+	public int getCajones() {
+		return this.cajones;
+	}
+
+	public void setCajones(int cajones) {
+		this.cajones = cajones;
+	}
+
+	public int getLadrillos() {
+		return this.ladrillos;
+	}
+
+	public void setLadrillos(int ladrillos) {
+		this.ladrillos = ladrillos;
+	}
+
+	// añade ladrillos a los cajones
+
+	public void llenarCajones(int ladrillos) {
+		this.ladrillos = this.ladrillos + ladrillos;
+		System.out.println("Has guardado" + ladrillos + " ladrillos en los cajones.");
+	}
+
+	// mira cuantos ladrillos tienes en los cajones
+	public void mirarCajones() {
+		System.out.println("Hay " + getLadrillos() + " ladrillos en los cajones.");
+	}
+}

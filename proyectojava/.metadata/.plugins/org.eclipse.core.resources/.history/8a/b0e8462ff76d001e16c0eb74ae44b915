@@ -1,0 +1,10 @@
+package proyecto;
+
+public class cajoneras extends muebles{
+	private int cajones, ladrillos;
+	
+	public int getCajones() {
+		return this.cajones;
+	}
+	
+}

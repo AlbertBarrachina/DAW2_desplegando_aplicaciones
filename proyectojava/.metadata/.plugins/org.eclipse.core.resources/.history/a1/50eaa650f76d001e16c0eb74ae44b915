@@ -1,0 +1,23 @@
+package proyecto;
+
+public class cajoneras extends muebles {
+	private int cajones, ladrillos;
+
+	// setters y getters
+	public int getCajones() {
+		return this.cajones;
+	}
+
+	public void setCajones(int cajones) {
+		this.cajones = cajones;
+	}
+
+	public int getLadrillos() {
+		return this.cajones;
+	}
+
+	public void setLadrillos(int ladrillos) {
+		this.ladrillos = ladrillos;
+	}
+
+}

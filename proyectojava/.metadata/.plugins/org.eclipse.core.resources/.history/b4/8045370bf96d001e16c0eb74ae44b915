@@ -1,0 +1,47 @@
+package proyecto;
+
+/**
+ * La clase Cajoneras representa un tipo de mueble que hereda las
+ * características de la clase Muebles e incluye atributos adicionales como la
+ * cantidad de cajones y la cantidad de ladrillos que se pueden guardar en
+ * ellos.
+ *
+ * @version 1.0
+ * @since 2023-10-18
+ */
+public class cajoneras extends muebles {
+	private int cajones, ladrillos;
+
+	public cajoneras(String color, int altura, int ancho, int peso) {
+		super(color, altura, ancho, peso);
+	}
+
+	// setters y getters
+	public int getCajones() {
+		return this.cajones;
+	}
+
+	public void setCajones(int cajones) {
+		this.cajones = cajones;
+	}
+
+	public int getLadrillos() {
+		return this.ladrillos;
+	}
+
+	public void setLadrillos(int ladrillos) {
+		this.ladrillos = ladrillos;
+	}
+
+	// añade ladrillos a los cajones
+
+	public void llenarCajones(int ladrillos) {
+		this.ladrillos = this.ladrillos + ladrillos;
+		System.out.println("Has guardado" + ladrillos + " ladrillos en los cajones.");
+	}
+
+	// mira cuantos ladrillos tienes en los cajones
+	public void mirarCajones() {
+		System.out.println("Hay " + getLadrillos() + " ladrillos en los cajones.");
+	}
+}

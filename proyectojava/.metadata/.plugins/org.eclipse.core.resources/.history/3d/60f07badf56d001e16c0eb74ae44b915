@@ -1,0 +1,17 @@
+package proyecto;
+
+public class muebles {
+
+	private String color;
+	private int altura, ancho, peso;
+	
+	
+	public String getColor() {
+		return this.color;
+	}
+	
+	public void setColor(String color) {
+		this.color = color;;
+	}
+	
+}
