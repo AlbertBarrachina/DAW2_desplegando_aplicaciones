@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>calculadora module &#8212; Practica4 1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script src="_static/documentation_options.js?v=29a6c3e3"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-calculadora">
+<span id="calculadora-module"></span><h1>calculadora module<a class="headerlink" href="#module-calculadora" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="calculadora.calculadora">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">calculadora.</span></span><span class="sig-name descname"><span class="pre">calculadora</span></span><a class="reference internal" href="_modules/calculadora.html#calculadora"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#calculadora.calculadora" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A simple calculator class for basic arithmetic operations.</p>
+<p>Methods:
+- sumar(x, y): Add two numbers.
+- restar(x, y): Subtract two numbers.
+- multiplicar(x, y): Multiply two numbers.
+- dividir(x, y): Divide two numbers.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="calculadora.calculadora.dividir">
+<span class="sig-name descname"><span class="pre">dividir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/calculadora.html#calculadora.dividir"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#calculadora.calculadora.dividir" title="Link to this definition">¶</a></dt>
+<dd><p>Divide two numbers and return the result.</p>
+<p>This method performs division between two numbers and returns the result. It also handles division by zero, raising a ValueError if y is 0.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>float</em><em> or </em><em>int</em>) – The dividend. It can be a float or an integer.</p></li>
+<li><p><strong>y</strong> (<em>float</em><em> or </em><em>int</em>) – The divisor. It can be a float or an integer.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The result of the division. The return type matches the type of the operands.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float or int</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the divisor (y) is 0, a ValueError is raised to prevent division by zero.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="calculadora.calculadora.multiplicar">
+<span class="sig-name descname"><span class="pre">multiplicar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/calculadora.html#calculadora.multiplicar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#calculadora.calculadora.multiplicar" title="Link to this definition">¶</a></dt>
+<dd><p>Multiply two numbers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>float</em><em> or </em><em>int</em>) – The first factor. It can be a float or an integer.</p></li>
+<li><p><strong>y</strong> (<em>float</em><em> or </em><em>int</em>) – The second factor. It can be a float or an integer.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The result of the multiplication. The return type matches the type of the operands.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float or int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="calculadora.calculadora.restar">
+<span class="sig-name descname"><span class="pre">restar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/calculadora.html#calculadora.restar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#calculadora.calculadora.restar" title="Link to this definition">¶</a></dt>
+<dd><p>Subtract two numbers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>float</em><em> or </em><em>int</em>) – The minuend. It can be a float or an integer.</p></li>
+<li><p><strong>y</strong> (<em>float</em><em> or </em><em>int</em>) – The subtrahend. It can be a float or an integer.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The result of the subtraction. The return type matches the type of the operands.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float or int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="calculadora.calculadora.sumar">
+<span class="sig-name descname"><span class="pre">sumar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/calculadora.html#calculadora.sumar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#calculadora.calculadora.sumar" title="Link to this definition">¶</a></dt>
+<dd><p>Add two numbers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>float</em><em> or </em><em>int</em>) – The first number to be added. It can be a float or an integer.</p></li>
+<li><p><strong>y</strong> (<em>float</em><em> or </em><em>int</em>) – The second number to be added. It can be a float or an integer.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The result of the addition. The return type matches the type of the operands.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float or int</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Practica4</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Albert Barrachina Ribes.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/calculadora.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
